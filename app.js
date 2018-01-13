@@ -22,4 +22,7 @@ function imgChange (){
   $('<img src="http://lorempixel.com/350/150/animals/" alt="Placeholder Image">').insertAfter(elem1);
 }
 $(imgChange);*/
-$('img').attr('src', 'http://lorempixel.com/350/150/animals/');
+function imgChange(){
+ $('img').attr('src', 'http://lorempixel.com/350/150/animals/');
+};
+$(imgChange);
