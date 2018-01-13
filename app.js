@@ -12,7 +12,7 @@ http://lorempixel.com/350/150/animals/
 
 Good luck!
 
-*/
+
 function imgChange (){
  var imag, elem, elem1;
   elem = $('.article-item');
@@ -21,4 +21,5 @@ function imgChange (){
   elem1=elem.find('h3');
   $('<img src="http://lorempixel.com/350/150/animals/" alt="Placeholder Image">').insertAfter(elem1);
 }
-$(imgChange);
+$(imgChange);*/
+$('img').attr('src', 'http://lorempixel.com/350/150/animals/');
