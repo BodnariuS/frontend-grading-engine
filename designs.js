@@ -19,7 +19,11 @@ table.on('click', 'td', function() {
 //selecting color
  var color=$('#colorPicker').val();
   // to the clicked <td> element puting the background color of var color
-  $('td').css('background-color', color);
+  $(this).css('background-color', color);
   //la <td> trebuie sa ii adaugam atributul bgcolor care sa fie egal cu val color
 });
 }
+$("input[type='submit']").click(function(e) {
+  e.preventDefault(); //Required to avoid submit and page reload
+  makeGrid();
+});
