@@ -1,11 +1,11 @@
 // Select color input
 var color, row, column;
-$('#colorPicker').on('change' function(){
+$('#colorPicker').on('change', function(){
 color=$('#colorPicker').val();
  return color;
- )}
+ });
 // Select size input
-$('#input_height').on('change' function(){
+$('#input_height').on('change', function(){
  row=$('#input_height').val();
  return row;
 });
