@@ -19,4 +19,5 @@ table.on('click', 'td', function() {
 //selecting color
  var color=$('#colorPicker').val();
 }; 
+$(makeGrid);
 
