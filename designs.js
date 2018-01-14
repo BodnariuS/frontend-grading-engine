@@ -18,6 +18,9 @@ table=$('#sizePicker')
 table.on('click', 'td', function() {
 //selecting color
  var color=$('#colorPicker').val();
+  // to the clicked <td> element puting the background color of var color
+  $('td').attr('bgcolor', color);
+  //la <td> trebuie sa ii adaugam atributul bgcolor care sa fie egal cu val color
 }; 
 $(makeGrid);
 
