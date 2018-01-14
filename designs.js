@@ -5,7 +5,7 @@ var row, column, table;
 row=$('#input_height').val();
 column=$('#input_width').val();
 //select table
-table=$('#sizePicker')
+table=$('#pixel_canvas')
 // create row's
   for (var i=0; i < row; i++) {
       table.append('<tr></tr>');
