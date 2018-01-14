@@ -15,9 +15,8 @@ table=$('#sizePicker')
           };
   };
 // When size is submitted by the user, call makeGrid()
-};
 table.on('click', 'td', function() {
 //selecting color
  var color=$('#colorPicker').val();
- 
+}; 
 
