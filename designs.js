@@ -1,33 +1,23 @@
+function makeGrid() {
 // Select color input
-var color, row, column;
-$('#colorPicker').on('change', function(){
-var col;
-col=$('#colorPicker').val();
-color.text(col);
- //return color;
- });
+var row, column, table;
 // Select size input
-$('#input_height').on('change', function(){
- var r;
- r=$('#input_height').val();
- row.text(r);
-});
-$('#input_width').on('change', function(){
- var c;
- c=$('#input_width').val();
- colom.text(val);
-});
-
-// When size is submitted by the user, call makeGrid()
-
- $('#sizePicker').on('click',function makeGrid(row, colom) {
-  for (var i=1; i <= row; i++) {
-      $('# pixel_canvas').append('<tr> </tr>')
-          for (var j=1; j <= colom; j++){
-              $('tr').append('<td> </td>')
+row=$('#input_height').val();
+column=$('#input_width').val();
+//select table
+table=$('#sizePicker')
+// create row's
+  for (var i=0; i < row; i++) {
+      table.append('<tr></tr>');
+   //create colms
+          for (var j=0; j < column; j++){
+              table.children().last().append('<td></td>')
           };
   };
+// When size is submitted by the user, call makeGrid()
 };
-                     
-// Your code goes here!
+table.on('click', 'td', function() {
+//selecting color
+ var color=$('#colorPicker').val();
+ 
 
