@@ -21,6 +21,7 @@ table.on('click', 'td', function() {
   // to the clicked <td> element puting the background color of var color
   $('td').attr('bgcolor', color);
   //la <td> trebuie sa ii adaugam atributul bgcolor care sa fie egal cu val color
+});
 }; 
 $(makeGrid);
 
