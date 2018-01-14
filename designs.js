@@ -1,9 +1,19 @@
 // Select color input
 var color, row, column;
+$('#colorPicker').on('change' function(){
 color=$('#colorPicker').val();
+ return color;
+ )}
 // Select size input
-row=$('#input_height').val();
-colom=$('#input_width').val();
+$('#input_height').on('change' function(){
+ row=$('#input_height').val();
+ return row;
+});
+$('#input_width').on('change' function(){
+ colom=$('#input_width').val();
+ return colom;
+});
+
 // When size is submitted by the user, call makeGrid()
 
  function makeGrid() {
