@@ -9,7 +9,7 @@ $('#input_height').on('change', function(){
  row=$('#input_height').val();
  return row;
 });
-$('#input_width').on('change' function(){
+$('#input_width').on('change', function(){
  colom=$('#input_width').val();
  return colom;
 });
