@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Headers Quiz</title>
-  <!-- the next line loads the tests for the Udacity Feedback extension -->
-  <meta name="udacity-grader" content="http://udacity.github.io/fend/fend-refresh/lesson2/problem-set/headers/tests.json">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>Add your headers below this paragraph element! Add an h1, h2, h3, and h4 to finish the quiz. And make sure every header has text content :)</p>
-<header>
-  <h1> this is very important<h1>
-    <h2> I will try to do my best</h2>
-    <h3> I hope that what i've done is good</h3>
-    <h4> this was all</h4>
-    </header>
-  </body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="submit">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table
+    <script src="designs.js"></script>
+     <!--Load jQuery using Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
 </html>
